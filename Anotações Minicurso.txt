@@ -1,0 +1,19 @@
+Web Socket
+WhatsApp não necessita de gatilhos em requisições de forma que a comunicação seja dinamica, Logo é utilizado 
+web socket para que a comunicação interface-usuario seja realizada em runtime
+
+Usa protocolo TCP, que faz uma comunicação bidirecional
+trabalha com eventos pontuais, fazendo com que de forma dinamica seja possivel vizualizar quem fez o que
+tem baixa latencia
+Mensagem apenas quando tem novos dados (Pooling Overhead)
+Cliente e servidor estao simultaneamente emitindo e escutando eventos
+Conexão persistente(aberta)
+FullDuplex
+HTTP e Web socket podem ser usados em comunhão e usa-los juntos até pode melhorar a capacidade da aplicação
+É mais complicado de fazer debug, uso de logs é mais indicado visto que a estrutura não é tão linear
+API nativa no navegador
+CLiente inicia conexão
+Handshake - updrade para webSocket
+comunicação continua via mensagens
+
+https://socket.io/ - lib js que faz a comunicação do websocket
